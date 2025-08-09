@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About | PixelWave Creative Studio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #eaf6f6 0%, #f7c873 100%);
+      position: relative;
+      overflow-x: hidden;
+    }
+    .animated-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.18;
+      animation: float 12s infinite linear;
+    }
+    @keyframes float {
+      0% { transform: translateY(0);}
+      50% { transform: translateY(-30px);}
+      100% { transform: translateY(0);}
+    }
+    header {
+      background: #2d3a4b;
+      color: #fff;
+      padding: 28px 0 18px 0;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #1a2230;
+      padding: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #f7c873;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .about-main {
+      max-width: 900px;
+      margin: 50px auto 0 auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.09);
+      padding: 40px 30px;
+    }
+    .about-main h2 {
+      color: #2d3a4b;
+      font-size: 2.2em;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .about-main p {
+      color: #444;
+      font-size: 1.15em;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+    .team-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .team-section h3 {
+      color: #2d3a4b;
+      margin-bottom: 18px;
+      font-size: 1.4em;
+    }
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+    .team-card {
+      background: #e3eafc;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+      padding: 22px 18px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .team-card:hover {
+      transform: scale(1.04);
+    }
+    .team-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      object-fit: cover;
+      border: 3px solid #f7c873;
+    }
+    .team-card h4 {
+      margin: 8px 0 4px 0;
+      color: #2d3a4b;
+      font-size: 1.1em;
+    }
+    .team-card p {
+      font-size: 0.98em;
+      color: #444;
+      margin-bottom: 0;
+    }
+    .values-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .values-section h3 {
+      color: #2d3a4b;
+      margin-bottom: 16px;
+      font-size: 1.3em;
+    }
+    .values-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 10px;
+    }
+    .value-card {
+      background: #f7f7fa;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+      padding: 18px 14px;
+      width: 180px;
+      text-align: center;
+      font-size: 1em;
+      color: #2d3a4b;
+    }
+    footer {
+      background: #2d3a4b;
+      color: #fff;
+      text-align: center;
+      padding: 22px 0;
+      font-size: 1em;
+      letter-spacing: 1px;
+      margin-top: 60px;
+    }
+    @media (max-width: 900px) {
+      .team-list, .values-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-main {
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="circle" style="width:100px;height:100px;left:10vw;top:15vh;background:#f7c873;"></div>
+    <div class="circle" style="width:70px;height:70px;left:80vw;top:25vh;background:#2d3a4b;"></div>
+    <div class="circle" style="width:90px;height:90px;left:50vw;top:80vh;background:#e3eafc;"></div>
+    <div class="circle" style="width:50px;height:50px;left:90vw;top:85vh;background:#1a2230;"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>About PixelWave</h1>
+    <p>Meet the creative minds behind the magic.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <!-- Main About Section -->
+  <section class="about-main">
+    <h2>Who We Are</h2>
+    <p>
+      PixelWave Creative Studio is a passionate team of designers, developers, and strategists based in India. 
+      We believe in the power of creativity and technology to transform brands and businesses. 
+      Our mission is to deliver digital solutions that are not only beautiful but also impactful.
+    </p>
+    <p>
+      Since 2021, we've helped startups, small businesses, and established companies build their online presence, 
+      launch products, and grow their audiences. We love what we do—and we do it with heart!
+    </p>
+
+    <!-- Team Section -->
+    <div class="team-section">
+      <h3>Meet Our Team</h3>
+      <div class="team-list">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Srushti">
+          <h4>Srushti</h4>
+          <p>Lead Designer & Founder</p>
+        </div>
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Uday">
+          <h4>Uday</h4>
+          <p>Full Stack Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya">
+          <h4>Priya</h4>
+          <p>Brand Strategist</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values Section -->
+    <div class="values-section">
+      <h3>Our Values</h3>
+      <div class="values-list">
+        <div class="value-card">🌟 Creativity</div>
+        <div class="value-card">🤝 Collaboration</div>
+        <div class="value-card">💡 Innovation</div>
+        <div class="value-card">🎯 Results</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PixelWave Creative Studio | Designed by Srushti | All Rights Reserved</p>
+  </footer>
